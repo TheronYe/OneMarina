@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="維港暮色氣氛示意圖">
+  <defs>
+    <linearGradient id="hSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1830"/>
+      <stop offset=".5" stop-color="#152c4a"/>
+      <stop offset=".74" stop-color="#6e4f34"/>
+      <stop offset=".9" stop-color="#c98d4c"/>
+      <stop offset="1" stop-color="#e8b269"/>
+    </linearGradient>
+    <linearGradient id="hSea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9a45e"/>
+      <stop offset=".3" stop-color="#4e5f63"/>
+      <stop offset="1" stop-color="#081524"/>
+    </linearGradient>
+    <radialGradient id="hSun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffedc4" stop-opacity=".95"/>
+      <stop offset=".35" stop-color="#eebc72" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#eebc72" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hFadeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b1626" stop-opacity="1"/>
+      <stop offset=".72" stop-color="#0b1626" stop-opacity="1"/>
+      <stop offset="1" stop-color="#0b1626" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hFadeR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b1626" stop-opacity="0"/>
+      <stop offset=".3" stop-color="#0b1626" stop-opacity="1"/>
+      <stop offset="1" stop-color="#0b1626" stop-opacity="1"/>
+    </linearGradient>
+    <pattern id="hWin" width="14" height="18" patternUnits="userSpaceOnUse">
+      <rect x="3" y="5" width="7" height="4" fill="#ffd98f" opacity=".8"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="620" fill="url(#hSky)"/>
+  <circle cx="800" cy="608" r="330" fill="url(#hSun)"/>
+  <circle cx="800" cy="606" r="42" fill="#ffe9b8"/>
+
+  <!-- distant skyline -->
+  <path fill="url(#hFadeL)" d="M0 620 V440 h30 v-46 h24 v46 h28 v-74 h20 v74 h34 v-52 h40 v52 h26 v-96 h18 v96 h38 v-64 h32 v64 h36 v-44 h28 v44 h40 v-84 h22 v84 h36 v-56 h30 v56 h42 v-40 h26 v40 h36 v-70 h34 V620 Z"/>
+  <path fill="url(#hFadeR)" d="M980 620 V420 h36 v-52 h30 v52 h40 v-80 h24 v80 h34 v-58 h38 v58 h30 v-96 h22 v96 h42 v-64 h34 v64 h38 v-46 h30 v46 h42 v-74 h24 v74 h38 v-54 h32 v54 H1600 V620 Z"/>
+
+  <!-- twin towers -->
+  <g>
+    <rect x="700" y="250" width="90" height="370" fill="#0c192c"/>
+    <rect x="700" y="250" width="90" height="370" fill="url(#hWin)" opacity=".55"/>
+    <path d="M700 250 L745 220 L790 250" fill="none" stroke="#e6cf9b" stroke-width="2" opacity=".75"/>
+    <rect x="814" y="196" width="96" height="424" fill="#0d1e33"/>
+    <rect x="814" y="196" width="96" height="424" fill="url(#hWin)" opacity=".7"/>
+    <path d="M814 196 L862 162 L910 196" fill="none" stroke="#e6cf9b" stroke-width="2" opacity=".75"/>
+    <path d="M862 162 v-12" stroke="#e6cf9b" stroke-width="2" opacity=".75"/>
+    <circle cx="862" cy="146" r="2.5" fill="#ffe9b8"/>
+  </g>
+
+  <!-- sea -->
+  <rect y="620" width="1600" height="280" fill="url(#hSea)"/>
+  <rect y="618" width="1600" height="3" fill="#ffd98f" opacity=".55"/>
+
+  <!-- sun reflection -->
+  <g fill="#ffd98f">
+    <rect x="760" y="640" width="80" height="4" rx="2" opacity=".8"/>
+    <rect x="740" y="658" width="120" height="4" rx="2" opacity=".6"/>
+    <rect x="770" y="678" width="70" height="4" rx="2" opacity=".7"/>
+    <rect x="730" y="700" width="140" height="4" rx="2" opacity=".5"/>
+    <rect x="756" y="724" width="90" height="4" rx="2" opacity=".55"/>
+    <rect x="716" y="750" width="170" height="4" rx="2" opacity=".4"/>
+    <rect x="748" y="778" width="110" height="4" rx="2" opacity=".35"/>
+    <rect x="720" y="806" width="160" height="4" rx="2" opacity=".3"/>
+    <rect x="752" y="836" width="96" height="4" rx="2" opacity=".25"/>
+  </g>
+
+  <!-- wave strokes -->
+  <g stroke="#e6cf9b" fill="none" stroke-linecap="round">
+    <path d="M60 700q30-8 60 0t60 0t60 0" opacity=".14"/>
+    <path d="M1200 720q30-8 60 0t60 0" opacity=".16"/>
+    <path d="M180 790q30-8 60 0t60 0t60 0" opacity=".12"/>
+    <path d="M1080 820q30-8 60 0t60 0t60 0" opacity=".14"/>
+    <path d="M420 850q30-8 60 0t60 0" opacity=".1"/>
+  </g>
+
+  <!-- boats -->
+  <g fill="#0b1626">
+    <path d="M330 668h64l-10 12h-46z"/>
+    <rect x="352" y="658" width="3" height="10"/>
+    <circle cx="354" cy="654" r="2.5" fill="#ffd98f"/>
+    <path d="M1240 700h48l-8 10h-34z"/>
+    <rect x="1258" y="692" width="3" height="8"/>
+    <circle cx="1260" cy="688" r="2" fill="#ffd98f"/>
+  </g>
+</svg>

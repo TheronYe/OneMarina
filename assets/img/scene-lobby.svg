@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="會所大堂氛圍示意圖">
+  <defs>
+    <linearGradient id="lBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1c30"/>
+      <stop offset=".6" stop-color="#12293f"/>
+      <stop offset="1" stop-color="#0a1a2e"/>
+    </linearGradient>
+    <radialGradient id="lLamp" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffe9b8" stop-opacity=".95"/>
+      <stop offset=".45" stop-color="#e8b269" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#e8b269" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lView" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a2440"/>
+      <stop offset=".62" stop-color="#12324f"/>
+      <stop offset=".66" stop-color="#c98d4c"/>
+      <stop offset=".7" stop-color="#3c5560"/>
+      <stop offset="1" stop-color="#081524"/>
+    </linearGradient>
+    <linearGradient id="lFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6cf9b" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#e6cf9b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#lBg)"/>
+
+  <!-- sea-view window band -->
+  <rect x="600" y="280" width="300" height="440" fill="url(#lView)"/>
+  <g stroke="#e6cf9b" opacity=".5">
+    <path d="M600 280h300v440h-300z" fill="none" stroke-width="2"/>
+    <path d="M750 280v440" stroke-width="1.4" opacity=".7"/>
+  </g>
+  <g fill="#0b1626" opacity=".85">
+    <path d="M640 500h18v-36h10v36h14v-52h12v52h16v-28h12v28h18v-40h10v40h14v-20h12v20h16v-32h10v32h12v-16h14v16h12v-24h10v24h14v-14h12v14h20v-20h12v20H940V500z" transform="translate(-20 0)"/>
+  </g>
+  <circle cx="688" cy="470" r="26" fill="#e8b269" opacity=".35"/>
+
+  <!-- marble arc wall -->
+  <g fill="none" stroke="#e6cf9b">
+    <path d="M-80 1160 A420 420 0 0 1 340 740" stroke-width="2" opacity=".55"/>
+    <path d="M-60 1200 A520 520 0 0 1 460 680" stroke-width="1.6" opacity=".4"/>
+    <path d="M-40 1240 A620 620 0 0 1 580 620" stroke-width="1.2" opacity=".28"/>
+  </g>
+
+  <!-- pendant lights -->
+  <g>
+    <path d="M230 0v300" stroke="#e6cf9b" stroke-width="1.4" opacity=".6"/>
+    <circle cx="230" cy="318" r="52" fill="url(#lLamp)"/>
+    <circle cx="230" cy="318" r="12" fill="#ffe9b8"/>
+    <path d="M360 0v360" stroke="#e6cf9b" stroke-width="1.4" opacity=".6"/>
+    <circle cx="360" cy="378" r="44" fill="url(#lLamp)"/>
+    <circle cx="360" cy="378" r="10" fill="#ffe9b8"/>
+    <path d="M480 0v330" stroke="#e6cf9b" stroke-width="1.4" opacity=".6"/>
+    <circle cx="480" cy="348" r="48" fill="url(#lLamp)"/>
+    <circle cx="480" cy="348" r="11" fill="#ffe9b8"/>
+  </g>
+
+  <!-- lounge sofa -->
+  <g>
+    <rect x="150" y="880" width="440" height="120" rx="26" fill="#0e2036" stroke="#c8a96a" stroke-width="1.4" opacity=".95"/>
+    <rect x="170" y="820" width="200" height="90" rx="22" fill="#122c47" stroke="#c8a96a" stroke-width="1" opacity=".9"/>
+    <rect x="390" y="820" width="180" height="90" rx="22" fill="#122c47" stroke="#c8a96a" stroke-width="1" opacity=".9"/>
+    <rect x="150" y="1000" width="30" height="26" rx="6" fill="#0b1626"/>
+    <rect x="560" y="1000" width="30" height="26" rx="6" fill="#0b1626"/>
+    <rect x="220" y="846" width="100" height="52" rx="14" fill="#5c8a74" opacity=".4"/>
+    <rect x="410" y="846" width="100" height="52" rx="14" fill="#c8a96a" opacity=".28"/>
+  </g>
+
+  <!-- side table + vase -->
+  <g>
+    <rect x="640" y="930" width="90" height="90" rx="10" fill="#0e2036" stroke="#c8a96a" stroke-width="1.2" opacity=".9"/>
+    <path d="M685 930v-40" stroke="#e6cf9b" stroke-width="1.4" opacity=".7"/>
+    <circle cx="685" cy="876" r="16" fill="#5c8a74" opacity=".5"/>
+  </g>
+
+  <!-- floor sheen -->
+  <rect y="1010" width="900" height="190" fill="url(#lFloor)"/>
+  <path d="M0 1010h900" stroke="#e6cf9b" stroke-width="1" opacity=".25"/>
+</svg>

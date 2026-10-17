@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="歐陸式步行街示意圖">
+  <defs>
+    <linearGradient id="pBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1626"/>
+      <stop offset=".55" stop-color="#0f2438"/>
+      <stop offset="1" stop-color="#0c1c30"/>
+    </linearGradient>
+    <radialGradient id="pEnd" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffdf9e" stop-opacity=".85"/>
+      <stop offset=".4" stop-color="#e0a55e" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#e0a55e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8b269" stop-opacity=".18"/>
+      <stop offset=".5" stop-color="#122c47" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#081524" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#pBg)"/>
+
+  <!-- end-of-street glow -->
+  <ellipse cx="450" cy="700" rx="300" ry="240" fill="url(#pEnd)"/>
+
+  <!-- receding arcade arches -->
+  <g fill="none" stroke="#e6cf9b">
+    <path d="M40 1060 V490 A410 410 0 0 1 860 490 V1060" stroke-width="3" opacity=".75"/>
+    <path d="M130 1060 V580 A320 320 0 0 1 770 580 V1060" stroke-width="2.6" opacity=".6"/>
+    <path d="M210 1060 V660 A240 240 0 0 1 690 660 V1060" stroke-width="2.2" opacity=".5"/>
+    <path d="M280 1060 V730 A170 170 0 0 1 620 730 V1060" stroke-width="1.8" opacity=".42"/>
+    <path d="M340 1060 V790 A110 110 0 0 1 560 790 V1060" stroke-width="1.5" opacity=".36"/>
+  </g>
+
+  <!-- hanging lamps -->
+  <g>
+    <path d="M450 160v96" stroke="#e6cf9b" stroke-width="1.6" opacity=".7"/>
+    <circle cx="450" cy="272" r="30" fill="#ffdf9e" opacity=".2"/>
+    <circle cx="450" cy="272" r="9" fill="#ffe9b8"/>
+    <path d="M250 330v70" stroke="#e6cf9b" stroke-width="1.4" opacity=".6"/>
+    <circle cx="250" cy="416" r="24" fill="#ffdf9e" opacity=".16"/>
+    <circle cx="250" cy="416" r="7" fill="#ffe9b8"/>
+    <path d="M650 330v70" stroke="#e6cf9b" stroke-width="1.4" opacity=".6"/>
+    <circle cx="650" cy="416" r="24" fill="#ffdf9e" opacity=".16"/>
+    <circle cx="650" cy="416" r="7" fill="#ffe9b8"/>
+  </g>
+
+  <!-- shopfront glows between arches -->
+  <g fill="#e8b269" opacity=".14">
+    <rect x="130" y="700" width="80" height="360" rx="6"/>
+    <rect x="690" y="700" width="80" height="360" rx="6"/>
+    <rect x="300" y="790" width="52" height="270" rx="5"/>
+    <rect x="548" y="790" width="52" height="270" rx="5"/>
+  </g>
+
+  <!-- floor -->
+  <rect y="1060" width="900" height="140" fill="url(#pFloor)"/>
+  <g stroke="#e6cf9b" opacity=".18">
+    <path d="M0 1060h900"/>
+    <path d="M40 1060 L-60 1200M860 1060 L960 1200"/>
+    <path d="M210 1060 L160 1200M690 1060 L740 1200"/>
+  </g>
+  <ellipse cx="450" cy="1092" rx="180" ry="16" fill="#ffdf9e" opacity=".12"/>
+
+  <!-- foreground greenery -->
+  <g fill="#1d3a30" stroke="#5c8a74" stroke-width="1.4">
+    <path d="M70 1200 c-6 -110 10 -180 40 -230 c30 50 46 120 40 230z"/>
+    <path d="M830 1200 c-6 -110 10 -180 40 -230 c30 50 46 120 40 230z"/>
+  </g>
+  <g fill="#0c1c30" stroke="#5c8a74" stroke-width="1.4">
+    <rect x="52" y="1130" width="116" height="70" rx="10"/>
+    <rect x="732" y="1130" width="116" height="70" rx="10"/>
+  </g>
+</svg>

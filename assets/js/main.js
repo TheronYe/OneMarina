@@ -114,12 +114,16 @@
       a.addEventListener("click", closeMenu);
     });
   }
-  /* Esc 键与品牌标志点击时同样收起菜单 */
+  /* Esc 键、品牌标志、页面遮罩与抽屉关闭键均可收起菜单 */
   d.addEventListener("keydown", function (ev) {
     if (ev.key === "Escape") closeMenu();
   });
   var brand = d.querySelector(".brand");
   if (brand) brand.addEventListener("click", closeMenu);
+  var navBackdrop = d.getElementById("navBackdrop");
+  var drawerClose = d.getElementById("drawerClose");
+  if (navBackdrop) navBackdrop.addEventListener("click", closeMenu);
+  if (drawerClose) drawerClose.addEventListener("click", closeMenu);
 
   /* active section spy */
   var sections = [].slice.call(d.querySelectorAll("main section[id]"));
